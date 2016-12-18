@@ -1,0 +1,9 @@
+Django==1.10.4
+djangorestframework==3.5.3
+pbr==1.10.0
+psycopg2==2.6.2
+six==1.10.0
+stevedore==1.18.0
+virtualenv==15.0.3
+virtualenv-clone==0.2.6
+virtualenvwrapper==4.7.2

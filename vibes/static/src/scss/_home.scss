@@ -1,0 +1,106 @@
+.cta {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.headline {
+  color: $black;
+  font-size: 2.25rem;
+  margin-bottom: .5rem;
+}
+
+.sub-headline {
+  color: $gray;
+  margin-top: .5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.form {
+  background: $white-d;
+  margin: 4rem 0 2rem;
+  border: 1px solid $gray-l;
+  border-radius: $border-radius;
+  padding: 1.5rem 1.5rem .75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.action {
+  flex: 1;
+  display: flex;
+  margin-bottom: .75rem;
+}
+
+.email {
+  flex: 8;
+  color: #555555;
+  margin-right: 0;
+  border: 1px solid $gray-l;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 1rem;
+  font-size: 1.15rem;
+  outline: 0;
+}
+
+.email:focus {
+  border-color: $red;
+}
+
+.button {
+  flex: 2;
+  background-color: #fff;
+  color: #555555;
+  margin-left: 0;
+  border: 1px solid $gray-l;
+  border-left-width: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nudge {
+  color: $gray;
+  font-weight: 500;
+}
+
+.explain {
+  margin-top: 4.5rem;
+}
+
+.reasons {
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+.item {
+  margin-bottom: 1.5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 1.05rem;
+}
+
+.number {
+  margin: .5rem .75rem .5rem 0;
+  border: 1px solid $gray-l;
+  border-radius: 50%;
+  padding: .22rem .5rem;
+  font-size: .95rem;
+}
+
+.item div {
+  display: flex;
+  flex-direction: column;
+  color: $gray;
+}
+
+.main {
+  color: #555555;
+  margin: 0 .25rem .2rem 0;
+  font-weight: 600;
+}
