@@ -1,5 +1,5 @@
 <template>
-  <div id="login">
+  <div id="log-in">
     <div class="form-container">
       <h1>Welcome, back</h1>
       <form class="login-form">
@@ -18,8 +18,12 @@
 </template>
 
 <script>
+import router from '../router'
+import store from '../store'
+import axios from 'axios'
+
 export default {
-  name: 'login',
+  name: 'log-in',
 
   data: function () {
     return {
@@ -30,8 +34,24 @@ export default {
 
   methods: {
     logIn: function () {
-      console.log(this.email, this.password)
-      // http://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication
+        const data = {
+            email: this.email,
+            password: this.password
+        }
+        store.dispatch('POST_TOKEN', data).then(() => {
+            console.log('TOKEN: ' + store.state.token)
+            var instance = axios.create({
+              baseURL: '/api/v1/',
+              headers: {'Authorization': 'JWT ' + store.state.token}
+            })
+            instance.get('users/1')
+              .then(function (response) {
+                console.log(response.data)
+              })
+              .catch(function (error) {
+                console.log(error)
+              })
+        })
     }
   }
 }
