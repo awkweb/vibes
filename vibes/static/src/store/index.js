@@ -11,7 +11,7 @@ const store = new Vuex.Store({
   
   actions: {
         POST_TOKEN: ({ commit, state }, data) => {
-            return postToken(data.email, data.password).then(token => commit('SET_TOKEN', token))
+            return postToken(data.email, data.password).then(response => commit('SET_TOKEN', response.token))
         }
   },
 

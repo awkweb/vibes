@@ -3,8 +3,9 @@ import axios from 'axios'
 const BASE_URL = '/api/v1'
 
 function get (endpoint) {
+    const url = BASE_URL + endpoint
     return new Promise((resolve, reject) => {
-      axios.get(endpoint)
+      axios.get(url)
       .then(function (response) {
         resolve(response.data)
       })
@@ -15,8 +16,9 @@ function get (endpoint) {
 }
 
 function post (endpoint, data) {
+    const url = BASE_URL + endpoint
     return new Promise((resolve, reject) => {
-      axios.post(endpoint, data)
+      axios.post(url, data)
       .then(function (response) {
         resolve(response.data)
       })
@@ -27,10 +29,9 @@ function post (endpoint, data) {
 }
 
 export function postToken (email, password) {
-    const url = BASE_URL + '/token/'
     const data = {
         email: email,
         password: password
     }
-    return post(url, data)
+    return post('/token/', data)
 }

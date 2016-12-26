@@ -1,106 +1,78 @@
-.cta {
+.home__cta {
   margin-top: 6rem;
   text-align: center;
+
+  &__headline {
+    color: $black;
+    font-size: 2.35rem;
+    margin-bottom: .5rem;
+  }
+
+  &__sub-headline {
+    color: $gray;
+    margin-top: .5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
 }
 
-.headline {
-  color: $black;
-  font-size: 2.25rem;
-  margin-bottom: .5rem;
-}
-
-.sub-headline {
-  color: $gray;
-  margin-top: .5rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.form {
+.home__form {
   background: $white-d;
   margin: 4rem 0 2rem;
-  border: 1px solid $gray-l;
+  border: 2px solid $gray-l;
   border-radius: $border-radius;
   padding: 1.5rem 1.5rem .75rem;
   display: flex;
   flex-direction: column;
-}
 
-.action {
-  flex: 1;
-  display: flex;
-  margin-bottom: .75rem;
-}
+  & > form {
+    flex: 1;
+    display: flex;
+    margin-bottom: .75rem;
+  }
 
-.email {
-  flex: 8;
-  color: #555555;
-  margin-right: 0;
-  border: 1px solid $gray-l;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  padding: 1rem;
-  font-size: 1.15rem;
-  outline: 0;
-}
+  &__email {
+    flex: 8;
+    color: $gray-d;
+    margin-right: 0;
+    border: 2px solid $gray-l;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    padding: 1rem;
+    font-size: 1.15rem;
+    outline: 0;
 
-.email:focus {
-  border-color: $red;
-}
+    &:hover {
+      border-color: $gray;
+    }
 
-.button {
-  flex: 2;
-  background-color: #fff;
-  color: #555555;
-  margin-left: 0;
-  border: 1px solid $gray-l;
-  border-left-width: 0;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-}
+    &:focus {
+      border-color: $red;
+    }
+  }
 
-.nudge {
-  color: $gray;
-  font-weight: 500;
-}
+  &__button {
+    flex: 2;
+    background-color: $white;
+    color: $gray-d;
+    margin-left: 0;
+    border: 2px solid $gray-l;
+    border-left-width: 0;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: $sans-serif;
+    cursor: pointer;
 
-.explain {
-  margin-top: 4.5rem;
-}
+    &:focus {
+      outline: 0;
+    }
+  }
 
-.reasons {
-  margin-top: 2.5rem;
-  display: flex;
-}
-
-.item {
-  margin-bottom: 1.5rem;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  font-size: 1.05rem;
-}
-
-.number {
-  margin: .5rem .75rem .5rem 0;
-  border: 1px solid $gray-l;
-  border-radius: 50%;
-  padding: .22rem .5rem;
-  font-size: .95rem;
-}
-
-.item div {
-  display: flex;
-  flex-direction: column;
-  color: $gray;
-}
-
-.main {
-  color: #555555;
-  margin: 0 .25rem .2rem 0;
-  font-weight: 600;
+  &__description {
+    color: $gray;
+    font-weight: 500;
+  }
 }

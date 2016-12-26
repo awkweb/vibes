@@ -1,0 +1,97 @@
+.djoser {
+  display: flex;
+  justify-content: center;
+}
+
+.auth {
+  margin-top: 3rem;
+  width: 22rem;
+
+  &__title {
+    margin-bottom: 2rem;
+    color: $black;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+  }
+
+  &__label-container, &__input {
+    flex: 1;
+  }
+
+  &__label-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+  }
+
+  &__label {
+    margin-left: 2px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  &__label-link {
+    color: $gray;
+    margin-right: 2px;
+    font-size: .9rem;
+  }
+
+  &__input {
+    color: $black;
+    border: 2px solid $gray-l;
+    border-radius: $border-radius;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    outline: 0;
+
+    &:hover {
+      border-color: $gray;
+    }
+
+    &:focus {
+      border-color: $red;
+    }
+  }
+
+  &__button--primary {
+    font-family: $sans-serif;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: $red;
+    padding: 12px 10px;
+    border: 2px solid $red;
+    border-radius: $border-radius;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      border-color: $red-d;
+    }
+  }
+
+  &__help {
+    margin-top: 3rem;
+    color: $gray;
+    text-align: center;
+
+    a {
+      color: $red;
+    }
+  }
+}

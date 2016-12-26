@@ -11,3 +11,27 @@ body {
   max-width: 55rem;
   margin: 0 auto;
 }
+
+input {
+  font-family: $sans-serif;
+}
+
+.logo {
+  margin-right: 30px;
+  color: $red !important;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+}
+
+#not-found-component {
+  margin-top: 4rem;
+  text-align: center;
+
+  h1 {
+    color: $black;
+  }
+
+  a {
+    color: $red;
+  }
+}

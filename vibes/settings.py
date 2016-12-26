@@ -27,6 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'vibes.api',
     'rest_framework',
+    'rest_framework_jwt',
+    'djoser',
     'cuser',
 ]
 
@@ -39,7 +41,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ),
-    'PAGE_SIZE': 10,
 }
 
 AUTH_USER_MODEL = 'cuser.CUser'

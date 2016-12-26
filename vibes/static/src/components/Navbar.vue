@@ -1,13 +1,13 @@
 <template>
-  <nav id="navbar">
-    <div class="pull-left">
-      <router-link :to="{ name: 'home' }" class="logo">Logo</router-link>
+  <nav id="navbar" class="navbar">
+    <div class="navbar__pull-left">
+      <router-link :to="{ name: 'home' }" class="logo">logo</router-link>
       <a href="#">About</a>
     </div>
 
-    <div class="pull-right">
-      <router-link :to="{ name: 'login' }">Log in</router-link>
-      <a href="#" class="button-link">Sign up</a>
+    <div class="navbar__pull-right">
+      <router-link :to="{ name: 'login' }">Log In</router-link>
+      <router-link :to="{ name: 'signup' }" class="navbar__button">Sign Up</router-link>
     </div>
   </nav>
 </template>

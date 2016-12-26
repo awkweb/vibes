@@ -1,34 +1,27 @@
-nav {
+.navbar {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-}
 
-.pull-left, .pull-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  a {
+    color: $gray;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-.button-link {
-  color: #fff !important;
-  background: $red;
-  margin-left: 30px;
-  padding: 10px 20px;
-  border-radius: $border-radius;
-  font-weight: 900 !important;
-}
+  &__button {
+    color: #fff !important;
+    background: $red;
+    margin-left: 30px;
+    padding: 10px 20px;
+    border-radius: $border-radius;
+    font-weight: 700 !important;
+  }
 
-#navbar a {
-  color: $gray;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.logo {
-  margin-right: 30px;
-  color: $red !important;
-  font-size: 30px !important;;
-  font-weight: 700 !important;;
+  &__pull-left, &__pull-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
